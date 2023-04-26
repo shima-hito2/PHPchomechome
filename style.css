@@ -1,0 +1,34 @@
+/* 初期化 */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* フォームの */
+form{
+  text-align: center;
+  width: 100%;
+}
+
+.labels{
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+
+.contents{
+  width: 70%;
+  text-align: left;
+}
+
+.names{
+  width: 75%;
+  display: flex;
+}
+
+.regist_button{
+  width: 50%;
+  margin-top: 20px;
+  text-align: center;
+}
