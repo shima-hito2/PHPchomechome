@@ -14,14 +14,26 @@ $err_message = array(
 
 
 // エラーチェック
-function err_check($last_name, $first_name, $gender, $prefecture, $address, $password, $confirm_password, $email)
+function err_check($last_name, $first_name, $gender, $prefecture, $address, $password, $confirm_password, $email, $err_flg = true, $err_message)
 {
-  // エラーの有無
+  // 氏名(姓)のチェック
   if (isset($last_name)) {
     $err_flg = false;
+    $err_message['last_name'] = '氏名(姓)は入力必須です。';
+  } else {
+    if (mb_strlen($last_name) > 20) {
+      $err_message['last_name'] = '氏名(姓)は20文字以内で入力して下さい。';
+    }
   }
+
+  // 氏名(名)のチェック
   if (isset($first_name)) {
     $err_flg = false;
+    $err_message['last_name'] = '氏名(名)は入力必須です。';
+  } else {
+    if (mb_strlen($first_name) > 20) {
+      $err_message['first_name'] = '氏名(名)は20文字以内で入力して下さい。';
+    }
   }
   if (isset($gender)) {
     $err_flg = false;
