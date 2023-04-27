@@ -16,17 +16,15 @@
     <label class="labels" for="last_name">氏名</label>
     <div class="names">
       <label class="labels" for="last_name">姓:</label>
-      <input class="contents" type="text" id="last_name" name="last_name" required><br>     
+      <input class="contents" type="text" id="last_name" name="last_name" value="<?php echo $_POST['last_name']?>"><br>
       <label class="labels" for="first_name">名:</label>
-      <input class="contents" type="text" id="first_name" name="first_name" required><br>
+      <input class="contents" type="text" id="first_name" name="first_name"><br>
     </div>
 
     <label class="labels" for="gender">性別:</label>
-    <select class="contents" id="gender" name="gender">
-      <option value="male">男性</option>
-      <option value="female">女性</option>
-      <option value="other">その他</option>
-    </select><br>
+    <input type="radio" name="gender" value="男性"> 男性
+    <input type="radio" name="gender" value="女性"> 女性
+    <br>
 
     <label class="labels" for="prefecture">都道府県:</label>
     <select class="contents" id="prefecture" name="prefecture">
@@ -80,17 +78,17 @@
       <option value="沖縄県">沖縄県</option>
     </select><br>
 
-    <label class="labels" for="address">それ以外の住所:</label>
+    <label class="labels" for="address">それ以降の住所:</label>
     <input class="contents" type="text" id="address" name="address"><br>
 
     <label class="labels" for="password">パスワード:</label>
-    <input class="contents" type="password" id="password" name="password" required><br>
+    <input class="contents" type="password" id="password" name="password"><br>
 
     <label class="labels" for="confirm_password">確認用パスワード:</label>
-    <input class="contents" type="password" id="confirm_password" name="confirm_password" required><br>
+    <input class="contents" type="password" id="confirm_password" name="confirm_password"><br>
 
     <label class="labels" for="email">メールアドレス:</label>
-    <input class="contents" type="email" id="email" name="email" required><br>
+    <input class="contents" type="email" id="email" name="email"><br>
 
     <input class="regist_button" type="submit" value="登録">
   </form>

@@ -18,13 +18,14 @@ form{
 }
 
 .contents{
-  width: 70%;
+  width: 60%;
   text-align: left;
 }
 
 .names{
   width: 75%;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .regist_button{
